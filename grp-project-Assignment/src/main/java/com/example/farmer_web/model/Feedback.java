@@ -15,6 +15,7 @@ public class Feedback {
     private String name;
     private String mobileNo;
     private String message;
+    private String email;
     private Date date;
 
 }
