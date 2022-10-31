@@ -8,7 +8,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @Controller
 public class FeedbackController {
@@ -18,16 +17,17 @@ public class FeedbackController {
     private FeedbackService feedbackService;
 
     @PostMapping("/addFeedback")
-    public String addFeedback(@RequestParam("name") String name,
-                                @RequestParam("mobileNo") String mobileNo,
-                                @RequestParam("message") String message,
-                                @RequestParam("email") String email){
+    public String addFeedback(
+                              @RequestParam("name") String name,
+                              @RequestParam("mobileNo") String mobileNo,
+                              @RequestParam("message") String message,
+                              @RequestParam("email") String email){
         feedbackService.saveFeedback(name,mobileNo,message,email);
         return "Your Feedback iss added successfully";
     }
-//
+
 //    @GetMapping("/feedback/{id}")
-//    public Optional<Feedback> findFeedback(@PathVariable int id){
+//    public Feedback findFeedback(@PathVariable int id){
 //        return feedbackService.getFeedbackById(id);
 //    }
 //    @GetMapping("/feedbacktList")
@@ -36,9 +36,9 @@ public class FeedbackController {
 //        return feedbackService.getAllFeedback();
 //    }
 //
-//    @DeleteMapping("/delete/{id}")
-//    public String deleteUser(@PathVariable int id) {
-//        return FeedbackService.deleteUser(id);
+//    @DeleteMapping("/deleteFeedback/{id}")
+//    public String deleteFeedback(@PathVariable int id) {
+//        return feedbackService.deleteFeedback(id);
 //    }
 
     }

@@ -8,5 +8,5 @@ import java.util.Date;
 
 @Repository
 public interface FeedbackRepository extends JpaRepository<Feedback,Integer> {
-    Feedback findByDate(Date date);
+    //Feedback findByDate(Date date);
 }
