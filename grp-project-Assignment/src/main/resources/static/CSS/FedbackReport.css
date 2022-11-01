@@ -1,0 +1,22 @@
+
+header {
+    background-color: forestgreen;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+section {
+    display: -webkit-flex;
+    display: flex;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
+}
