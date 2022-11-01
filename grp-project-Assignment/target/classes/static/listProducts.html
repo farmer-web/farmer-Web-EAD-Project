@@ -22,15 +22,11 @@
         </tr>
         </thead>
         <tbody>
-        <tr th:each="product : ${products}">
+        <tr th:each="product : ${product}">
             <th scope="row"><img alt="" th:src="*{'data:image/jpeg;base64,'+{product.image}}" style="width: 100px;height: 100px;"></th>
             <td>[[*{product.name}]]
                 <!-- Button trigger modal --> <br>
-                <button type="button" class="btn btn-success btn-sm mt-2"
-                        data-toggle="modal"
-                        th:attr="data-target='#exampleModalCenter'+*{product.id}">change
-                    name</button> <!-- Modal -->
-
+                <!-- Modal -->
                 <div class="modal fade"
                      th:id="*{'exampleModalCenter'+{product.id}}" tabindex="-1"
                      role="dialog" aria-labelledby="exampleModalCenterTitle"
