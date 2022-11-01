@@ -1,0 +1,53 @@
+<html>
+<head>
+    <link href="../CSS/Feedback.css" rel="stylesheet">
+</head>
+<body>
+<div class="feedback">
+    <div class="feedback-header">
+        <p class="h3 mb-2 text-center">Add Feedback</p>
+    </div>
+    <div class="feedback-body">
+        <form class="feedback form class" action="/addFeedback" method="post" enctype="multipart/form-data">
+
+            <table class="table_for_form">
+                <tr class="tr1">
+                    <td class="td1">
+                        <!-- Name -->
+                        <input type="text" name="Cname" class="form1" id="name"
+                               placeholder="Your Name">
+                    </td>
+                </tr>
+                <tr class="tr1">
+                    <td class="td1">
+                    <!-- Price -->
+                    <input type="text" name="MobileNo" class="form1" id="Mobile"
+                           placeholder="Mobile Number">
+                    </td>
+                </tr>
+                <tr class="tr1">
+                    <td class="td1">
+                    <!-- Feedbacker email -->
+
+                    <input type="text" name="femail" class="form1" id="email"
+                           placeholder="Feedbacker email">
+                    </td>
+                </tr>
+                <tr class="tr1">
+                    <td class="td1">
+                    <textarea class="form1" id="fmessage" name="message" style="width:200px; height:200px;" placeholder="Feedback Message">
+                        </textarea>
+                    </td>
+                </tr>
+                <tr class="tr1">
+                    <td class="td1">
+                    <!-- Submit in button -->
+                    <button id="feedbackbtn" type="submit" value="ADD">Submit Feedback</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+</body>
+</html>

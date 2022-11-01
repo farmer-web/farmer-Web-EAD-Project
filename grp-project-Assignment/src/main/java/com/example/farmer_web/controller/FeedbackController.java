@@ -26,19 +26,19 @@ public class FeedbackController {
         return "Your Feedback iss added successfully";
     }
 
-//    @GetMapping("/feedback/{id}")
-//    public Feedback findFeedback(@PathVariable int id){
-//        return feedbackService.getFeedbackById(id);
-//    }
-//    @GetMapping("/feedbacktList")
-//    public List<Feedback> findAllFeedbacks() {
-//
-//        return feedbackService.getAllFeedback();
-//    }
-//
-//    @DeleteMapping("/deleteFeedback/{id}")
-//    public String deleteFeedback(@PathVariable int id) {
-//        return feedbackService.deleteFeedback(id);
-//    }
+    @GetMapping("/feedback/{id}")
+    public Feedback findFeedback(@PathVariable int id){
+        return feedbackService.getFeedbackById(id);
+    }
+    @GetMapping("/feedbacktList")
+    public List<Feedback> findAllFeedbacks() {
+
+        return feedbackService.getAllFeedback();
+    }
+
+    @DeleteMapping("/deleteFeedback/{id}")
+    public String deleteFeedback(@PathVariable int id) {
+        return feedbackService.deleteFeedback(id);
+    }
 
     }

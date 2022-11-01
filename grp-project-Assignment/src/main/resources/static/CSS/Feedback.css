@@ -1,0 +1,26 @@
+body{
+
+}
+.table_for_form{
+    border-collapse: collapse;
+    width: 40%;
+    height: 50%;
+    /*border-style: hidden;*/
+}
+
+.tr1{
+    border-bottom: 1px solid;
+}
+
+.td1{
+    background-color: darkcyan;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.form1{
+    height: 100%;
+    width: 60%;
+
+
+
+}
